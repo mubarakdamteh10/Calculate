@@ -11,19 +11,21 @@ public class CalculateGrade {
         this.score = score;
     }
     
-    public char calcuate() {
-        char grade;
+    public String calcuate() {
+        String grade;
         
         if(this.score >= 80) {
-            grade = 'A';
+            grade = "A";
+        }else if(this.score >= 75) {
+            grade = "B+";
         }else if(this.score >= 70) {
-            grade = 'B';
+            grade = "B";
         }else if(this.score >= 60) {
-            grade = 'C';
+            grade = "C";
         }else if(this.score >= 50) {
-            grade = 'D';
+            grade = "D";
         }else {
-            grade = 'F';
+            grade = "F";
         }
         
         return grade;
